@@ -1,3 +1,6 @@
+using BookStore.DAL.DbContext;
+using Microsoft.EntityFrameworkCore;
+
 namespace BookStore.PL
 {
     public class Program
@@ -8,7 +11,10 @@ namespace BookStore.PL
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-
+            builder.Services.AddDbContext<BookStoreContext>
+            (
+                options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConncetion)"))
+            );
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

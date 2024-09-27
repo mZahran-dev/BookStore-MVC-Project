@@ -11,4 +11,8 @@
     <Folder Include="Repositories\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\BookStore.DAL\BookStore.DAL.csproj" />
+  </ItemGroup>
+
 </Project>
