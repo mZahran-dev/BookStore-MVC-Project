@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace BookStore.DAL.Models
 {
-    internal class CartItem
+    public class CartItem
     {
+        public int Id { get; set; }
+        public Book Book { get; set; }
+        public int Quantity { get; set; }
+        public string CartId { get; set; }
     }
 }
