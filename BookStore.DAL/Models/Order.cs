@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BookStore.DAL.Models
 {
-    internal class Order
+    public class Order
     {
     }
 }
